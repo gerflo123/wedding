@@ -2,12 +2,36 @@ body {
   background-color: #d5ead5;
   margin: 5px;
 }
+
+.social-icons {
+  text-align: right;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:50px;
+  height:50px;
+  margin-right: 20px;
+}
+
+ul {
+  
+ float: right;
+}
+
 h1 {
 	font-size: 40px;
 	font-family: times;
 	font-style: oblique;
 	color: black;
-	margin-top: 0px;
+	margin-center: 0px;
 	padding:0px;
   
 }
@@ -82,7 +106,7 @@ p > img {
 	right: 0;
 	bottom: -5px;
 	left: 0;
-	padding: 1rem;
+	padding: 0px;
 	margin: 0px;
    background-color: #6b996b;
    text-align: center;
