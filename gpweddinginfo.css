@@ -22,87 +22,79 @@ body {
 }
 
 ul {
-  
  float: right;
 }
 
 h1 {
-	font-size: 40px;
-	font-family: times;
-	font-style: oblique;
-	color: black;
-	margin-center: 0px;
-	padding:0px;
+  font-size: 40px;
+  font-family: times;
+  font-style: oblique;
+  color: black;
+  margin-center: 0px;
+  padding:0px;
   
 }
 h2 {
   color: black;
   font-family: times;
-  	border-bottom: solid;
-	margin:0px;
-	padding:0px;
-	
-  
+  border-bottom: solid;
+  margin:0px;
+  padding:0px;
 }
 
 h4 {
-		font-size: 40px;
-	font-family: times;
-	font-style: oblique;
-	color: black;
-	margin-top: 0px;
-	padding:0px;
-	color: white;
+  font-size: 40px;
+  font-family: times;
+  font-style: oblique;
+  color: black;
+  margin-top: 0px;
+  padding:0px;
+  color: white;
 }
 
-.wedding-wrapper a:hover {
-  
+.wedding-nav a:hover {
   color: black;
 }
 
 
-.wedding-wrapper > nav > li{
-	float: left;
-	
-
+.wedding-nav > nav > li{
+  float: left;
 }
 
 
 
-.wedding-wrapper{
-	margin: 0px;
-	border-bottom: solid;
-	padding: 20px;
-	background-color: #6b996b;
-	
+.wedding-nav{
+  margin: 0px;
+  border-bottom: solid;
+  padding: 20px;
+  background-color: #6b996b;
 }
 
 nav {
-    font-size: 14px;
-    
-    list-style: none;
-    padding: 2px 0px;
+  font-size: 14px;
+  list-style: none;
+  padding: 2px 0px;
     
 }
 /*navigation bar*/
 nav > li > a {
-    color: #F4F4F4;
-    padding: 0px 10px;
-    line-height: 25px;
-    text-decoration: none;
-    font-size: 16px;
-    letter-spacing: .1em;
+  color: #F4F4F4;
+  padding: 0px 10px;
+  line-height: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: .1em;
 }
 
 
 .footer {
-	position: fixed;
-	right: 0;
-	bottom: -5px;
-	left: 0;
-	padding: 0px;
-	margin: 0px;
-   background-color: #6b996b;
-   text-align: center;
-   color: white;
+  position: fixed;
+  right: 0;
+  bottom: -5px;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+  background-color: #6b996b;
+  text-align: center;
+  color: white;
 }
