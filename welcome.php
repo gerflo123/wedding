@@ -1,6 +1,11 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
 <html>
 	<head>
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="shortcut icon" href="gplogo.png" />
+	<link rel="stylesheet" type="text/css" href="gpweddinginfo.css">
 	</head>
 	<body>
 		<img src="gplogo.png" style="width:100px;height:100px;">
@@ -21,18 +26,22 @@
 				<li class="wedding topics">
 				<a href="gpweddinginfo.html">WEDDING</a>
 				</li>
+				
 				<li class="wedding topics">
-				<a href="login.html">Log In</a>
+				<a href="welcome.php">WELCOME</a>
+				</li>
+				
+				<li class="wedding topics">
+				<a href="logout.php">LOG OUT</a>
 				</li>
 				</nav>
-				
 			</div>
-			<h3>Login Page</h1>
-			<form method= "post"action="handler.php">
-			<div> Username: <input type="text" name="firstname"><br></div>
-			<div> Password: <input type="password" name="firstname"><br></div>
-			<div><input type ="submit" value="Login"></div>
-			</form>
+			<div>
+				<p>
+				welcome!
+				
+				</p>
+			</div>
 			<div class="footer">
 				<p>@2019 Gerardo Flores</p>
 				
