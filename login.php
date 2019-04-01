@@ -55,8 +55,7 @@ session_start();
 
 						<label for= "fullname"> <b>Full Name</b> </label>
 						<input type= "text" placeholder= "Full Name" id= "fullname" name= "fullname" required>
-						
-						
+							
 						
 						<label for= "username"> <b>User Name</b> </label>
 						<input type= "text" placeholder= "User Name" id= "username" name="username" required>
@@ -70,9 +69,15 @@ session_start();
 						<label for="psw2"><b>Re-enter Password</b></label>
 						<input type="password" placeholder="Enter Password" id="psw2" name="psw2" required>
         
-		
-
-		
+       <?php
+      if (isset($_SESSION['messages'])) {
+        foreach($_SESSION['messages'] as $message) {
+          echo "<div class='message bad'>{$message}</div>";
+        }
+      }
+      unset($_SESSION['message']);
+      
+      ?>
 						<button type="submit">Create</button>
 					</div>
 					<div class="container" style="background-color:#f1f1f1">
@@ -90,7 +95,8 @@ session_start();
 
 						<label for="password"><b>Password</b></label>
 						<input type="password" placeholder="Enter Password" name="password" required>
-        
+						
+      
 						<button type="submit">Login</button>
 					</div>
 					<div class="container" style="background-color:#f1f1f1">
@@ -98,12 +104,7 @@ session_start();
 					</div>
 				</form>
 				
-								<?php
-      if (isset($_SESSION['message'])) {
-        echo "<div class='message'>" . $_SESSION['message'] . "</div>";
-      }
-      unset($_SESSION['message']);
-      ?>
+
 				</div>
 				
 		<!--	</div>  -->

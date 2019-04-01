@@ -30,11 +30,11 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
 	$messages[] = "PLEASE ENTER A VALID EMAIL";
 		$valid = false;
 	}
-	//not working yet
-		if(!preg_match('/^(?=.*\d)(?=.*[@#\-_$%^&+=§!\?])(?=.*[a-z])(?=.*[A-Z])[0-9A-Za-z@#\-_$%^&+=§!\?]{8,20}$/',$psw1)) {
-		$messages[] = "Password must contain at least one: number,symbol, uppercase letter, lowercase letter.";
-		$valid = false;
-	}
+
+if(!preg_match('/^(?=.*\d)(?=.*[@#\-_$%^&+=§!\?])(?=.*[a-z])(?=.*[A-Z])[0-9A-Za-z@#\-_$%^&+=§!\?]{8,20}$/',$psw1)) {
+	$messages[] = "Password must contain at least one: number,symbol, uppercase letter, lowercase letter.";
+	$valid = false;
+}
 
 if (!$valid) {
     $_SESSION['messages'] = $messages;
@@ -50,8 +50,8 @@ $dao = new Dao();
 $dao->saveLogin($username,$email,$psw1,$fullname);
 
 
-$_SESSION['message'] = "Thanks!";
-$_SESSION['good'] = true;
+//$_SESSION['message'] = "Thanks!";
+//$_SESSION['good'] = true;
 header('Location: welcome.php');
 
 
