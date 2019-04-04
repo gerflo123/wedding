@@ -4,7 +4,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $_SESSION['presets']['username'] = $username;
 $_SESSION['presets']['password'] = $password;
-$messages = array();
+$message = array();
 $presets = array();
 require_once 'Dao.php';
 $dao = new Dao();
@@ -16,7 +16,21 @@ $login = $dao->getLogin($username)[0];
 	exit;
 	}
 	
+	
+		
+
+	
+if (!$valid) {
+	$message[] = "User or password invalid";
+    $_SESSION['message'] = $message;
+
+    $_SESSION['logged_in'] = $_POST;
+    header("Location: login.php");
+    exit();
+} 
+	/*
 	$_SESSION['logged_in'] = false;
 	$_SESSION['message'] = "Username or password invalid";
 	header('Location: login.php');
 	exit;
+*/

@@ -32,7 +32,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
 	}
 
 if(!preg_match('/^(?=.*\d)(?=.*[@#\-_$%^&+=§!\?])(?=.*[a-z])(?=.*[A-Z])[0-9A-Za-z@#\-_$%^&+=§!\?]{8,20}$/',$psw1)) {
-	$messages[] = "Password must contain at least one: number,symbol, uppercase letter, lowercase letter.";
+	$messages[] = "Password must contain at least one: number,symbol, uppercase letter, lowercase letter. And 8 characters long.";
 	$valid = false;
 }
 

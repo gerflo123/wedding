@@ -7,7 +7,7 @@ session_start();
 	<link rel="shortcut icon" href="gplogo.png" />
 	<link rel="stylesheet" type="text/css" href="gpweddinginfo.css">
 	</head>
-	<body>
+	<body id="example1">
 		<img src="gplogo.png" style="width:100px;height:100px;">
 		<ul class="social-icons">
 		<li><a href="http://www.facebook.com"><img src='Social Media Icons/PNG/Circle Color/Facebook.png' /></a></li>
@@ -20,13 +20,6 @@ session_start();
 			<div class="wedding-nav">
 				
 				<nav>
-				<li class="wedding topics">
-				<a href="gpwedding.html">BIO</a>
-				</li>
-				<li class="wedding topics">
-				<a href="gpweddinginfo.html">WEDDING</a>
-				</li>
-				
 				<li class="wedding topics">
 				<a href="welcome.php">WELCOME</a>
 				</li>
