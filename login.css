@@ -101,7 +101,7 @@ p > img {
   margin: 0px;
   background-color: #ead0e3;
   text-align: center;
-  color: white;
+  color: #6b996b;
 }
 
 
@@ -183,7 +183,7 @@ span.psw {
   margin: 30px; /* 5% from the top, 15% from the bottom and centered */
   border: 15px ;
   
-  width: 40%; /* Could be more or less, depending on screen size */
+  width: 20%; /* Could be more or less, depending on screen size */
   float: left;
 }
 

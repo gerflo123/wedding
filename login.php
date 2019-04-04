@@ -100,7 +100,7 @@ session_start();
       
 	   <?php
       if (isset($_SESSION['message'])) {
-        echo "<div class='message bad'>{$message}</div>";
+        echo "<div class='message'>" . $_SESSION['message'] . "</div>";  
       }
       unset($_SESSION['message']);
       ?>
