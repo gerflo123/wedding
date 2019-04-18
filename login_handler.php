@@ -18,5 +18,5 @@ $login = $dao->getLogin($username)[0];
 	
 	$_SESSION['logged_in'] = false;
 	$_SESSION['message'] = "Username or password invalid";
-	header('Location: Login.php');
+	header('Location: login.php');
 	exit;
