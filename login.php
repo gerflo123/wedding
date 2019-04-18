@@ -9,6 +9,12 @@ session_start();
 <html>
 	<head>
 	<link rel="shortcut icon" href="gplogo.png" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script src="js/message.js"></script>
+    <script src="js/ajax.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="login.css">
 	</head>
 	<body id="example1" >
@@ -51,7 +57,7 @@ session_start();
 				<form class="modal-content animate" method="post" action="createuser_handler.php">
 				
 					<div class="container">
-									
+							     
 
 						<label for= "fullname"> <b>Full Name</b> </label>
 						<input value="<?php echo isset($_SESSION['form_input']['fullname']) ? $_SESSION['form_input']['fullname'] : ''; ?>"type= "text" placeholder= "Full Name"  id= "fullname" name= "fullname" required>
@@ -69,16 +75,17 @@ session_start();
 						<label for="psw2"><b>Re-enter Password</b></label>
 						<input value="<?php echo isset($_SESSION['form_input']['psw2']) ? $_SESSION['form_input']['psw2'] : ''; ?>" type="password" placeholder="Enter Password" id="psw2" name="psw2" required>
         
-       <?php
+		  <?php
       if (isset($_SESSION['messages'])) {
         foreach($_SESSION['messages'] as $message) {
           echo "<div class='message bad'>{$message}</div>";
         }
       }
 	  
-      unset($_SESSION['message']);
+      unset($_SESSION['messages']);
       unset($_SESSION['form_input']);
-      ?>
+      ?>		
+
 						<button type="submit">Create</button>
 					</div>
 					<div class="container" style="background-color:#f1f1f1">
@@ -91,6 +98,7 @@ session_start();
 		<!--		<div id="id02" class="modal">	-->			
 				<form class="modal-content animate" method="post" action="login_handler.php">
 					<div class="container">
+					
 						<label for="username"><b>User Name</b></label>
 						<input value="<?php echo isset($_SESSION['logged_in']['username']) ? $_SESSION['logged_in']['username'] : ''; ?>" type="text" placeholder="User Name" name="username" required>
 

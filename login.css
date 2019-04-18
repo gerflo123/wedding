@@ -183,7 +183,7 @@ span.psw {
   margin: 30px; /* 5% from the top, 15% from the bottom and centered */
   border: 15px ;
   
-  width: 20%; /* Could be more or less, depending on screen size */
+  width: 30%; /* Could be more or less, depending on screen size */
   float: left;
 }
 
@@ -220,7 +220,7 @@ span.psw {
   width: 300px;
   padding: 10 10;
   margin: 10 10;
-  background-color: red;
+  background-color: pink;
   color: white;
 }
 
