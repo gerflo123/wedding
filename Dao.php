@@ -1,4 +1,5 @@
 <?php
+
 class Dao {
   private $host = "us-cdbr-iron-east-03.cleardb.net";
   private $db = "heroku_71bf8a8ca8adc07";
@@ -16,9 +17,11 @@ class Dao {
 		$loginQuery = "select * from user where username = :username";
 		$q = $conn->prepare($loginQuery);
 		$q->bindParam(":username", $username);
+			$_SESSION['username'] = $username;
 		$q->execute();
 		return $q->fetchAll();
 	}
+	
 	
 	
     public function saveLogin ($username,$email, $password, $fullname) 
@@ -31,7 +34,9 @@ class Dao {
 		$q->bindParam(":email", $email);
 		$q->bindParam(":password", $passhash);
 		$q->bindParam(":fullname", $fullname);
+				$_SESSION['username'] = $username;
 		$q->execute();
+		
 	}
   }
   ?>

@@ -1,3 +1,3 @@
 $(function() {
-  $('.message').hide(4000).show(4000);
+  $('.message').hide(1000).show(1000);
 });
