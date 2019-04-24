@@ -21,9 +21,9 @@ require_once "Dao.php";
 	<body id="example1">
 		<img src="gplogo.png" style="width:100px;height:100px;">
 		<ul class="social-icons">
-		<li><a href="https://www.facebook.com/profile.php?id=100005857483610"><img src='Social Media Icons/PNG/Circle Color/Facebook.png' /></a></li>
-		<li><a href="https://www.pinterest.com/Paulinavianey/"><img src='Social Media Icons/PNG/Circle Color/Pinterest.png' /></a></li>
-		<li><a href="https://www.youtube.com/user/PaulineyLove22"><img src='Social Media Icons/PNG/Circle Color/YouTube.png' /></a></li>
+		<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100005857483610"><img src='Social Media Icons/PNG/Circle Color/Facebook.png' /></a></li>
+		<li><a target="_blank" href="https://www.pinterest.com/Paulinavianey/"><img src='Social Media Icons/PNG/Circle Color/Pinterest.png' /></a></li>
+		<li><a target="_blank" href="https://www.youtube.com/user/PaulineyLove22"><img src='Social Media Icons/PNG/Circle Color/YouTube.png' /></a></li>
 		</ul>
 		<h1><center><img src="images/gerardoandpaulinegetmarried.png" style="width:500px;height:150px;"></center></h1>
 		<h2><center><center></h2>
