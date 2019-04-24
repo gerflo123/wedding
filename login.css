@@ -22,8 +22,7 @@ body {
 }
 
 ul {
-  
- float: right;
+  float: right;
 }
 
 h1 {
@@ -33,6 +32,7 @@ h1 {
   color: black;
   margin-center: 0px;
   padding:0px;
+  margin: -10px;
   
 }
 h2 {

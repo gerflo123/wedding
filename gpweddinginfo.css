@@ -32,6 +32,7 @@ h1 {
   color: black;
   margin-center: 0px;
   padding:0px;
+  margin: -10px;
   
 }
 h2 {
@@ -60,8 +61,6 @@ h4 {
 .wedding-nav > nav > li{
   float: left;
 }
-
-
 
 .wedding-nav{
   margin: 0px;

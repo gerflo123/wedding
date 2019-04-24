@@ -32,7 +32,7 @@ session_start();
 				
 				<nav>
 				<li class="wedding topics">
-				<a href="gpwedding.html">BIO</a>
+				<a href="gpwedding.html">HOME</a>
 				</li>
 				<li class="wedding topics">
 				<a href="gpweddinginfo.html">WEDDING</a>
